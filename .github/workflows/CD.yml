@@ -1,5 +1,5 @@
 # Publishes to PyPi on release tag
-name: Publish to PyPi
+name: Continuous Deployment
 
 on:
   push:
