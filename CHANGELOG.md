@@ -1,6 +1,20 @@
 # Changelog
 
 ## [Untracked Changes]
+
+## [0.8.6]
+### Added
+- Improved methods for fitting PyTorch surrogates, including auto-stopping by parameter value norm
+
+### Modified
+- Greatly reduced the number of samples for DNN posterior, speeding up optimization
+- Stabilized the mean estimate of ensemble surrogates by avoiding resampling
+- Disabled root caching for ensemble surrogates during optimization
+- Increased the maximum length of a category name to 32 characters
+- Bug fix for incorrect symmetry in correlation calculation of calc_ofat_ranges
+- OFAT range calcs and plots now respect minimum targets and not just maximum
+
+## [0.8.5]
 ### Added
 - More optional outputs for verbose settings
 - Parameters in ParamSpace can also be indexed by name
